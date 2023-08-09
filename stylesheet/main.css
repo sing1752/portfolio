@@ -1,0 +1,336 @@
+/* CSS Reset Code */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* Starting */
+
+/* Navigation */
+
+body{
+  background-color: #071013;
+}
+
+.bg-rich-black {
+  background-color: #000000 !important;
+}
+
+.navbar {
+  position: relative; /* or absolute or fixed, depending on your layout */
+  z-index: 1000; /* this ensures the navbar is above other elements */
+}
+
+.nav-logo{
+  height: 3rem;
+  width: 3rem;
+}
+
+
+.nav-link{
+  color: #FAFAFF !important;
+}
+
+p{
+  color: #FAFAFF;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+h1{
+  color: #CD5C5C !important;
+}
+
+.section-title {
+  color: indianred;
+}
+
+.intro {
+  position: relative;
+}
+
+.intro {
+  background-image: url('/images/Black Technology LinkedIn Banner.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+  z-index: -1;
+  opacity: 0.5;
+}
+
+
+
+/* HOME */
+
+.img-fluid{
+  margin-top: 70px;
+  object-fit: contain;
+}
+.carousel-caption .overlay {
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  padding: 20px; /* Add some padding so the text and button aren't right up against the edge of the overlay */
+}
+
+
+
+/* Circle Styling */
+.circle {
+  position: relative;
+  overflow: hidden; /* Hide the overlay content that goes outside the circle */
+}
+
+.circle-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.circle-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-title {
+  z-index: 1; /* Place the title above the overlay */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%; /* Adjust based on your preference */
+  height: 80%; /* Adjust based on your preference */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  border-radius: 50%; /* Make it circular */
+  transform: translate(-50%, -50%); /* Center the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.circle:hover .circle-title {
+  opacity: 0; /* Hide the title on hover */
+}
+
+.circle:hover .overlay {
+  opacity: 1; /* Show the overlay content on hover */
+}
+
+.overlay p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  padding: 10px; /* Add some padding for better readability */
+}
+
+/* PROJECTS FOR LARGE SCREENS */
+.card {
+  overflow: hidden; /* Hide overflow content */
+}
+
+.card-img-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4); /* Black overlay with 40% opacity */
+}
+
+.hoverable:hover .card-img-top {
+  transform: scale(1.05); /* Zoom in the image */
+  transition: transform .2s; /* Smooth transition */
+}
+
+.hoverable:hover .card-img-overlay {
+  display: flex;
+}
+
+/* FOR THE MOVIE POSTER CARD */
+.fixed-height-card {
+  height: 400px; /* You can adjust this value based on your preference */
+}
+
+.fit-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card h5{
+  color: ghostwhite;
+}
+/* CONTACT */
+.custom-border {
+  border-color: indianred;
+  border-width: 2px;
+}
+
+/* Media query for screens 768px or above */
+@media (min-width: 768px) {
+  .contact-img {
+      max-width: 70%; /* Adjust this value as needed to decrease the image size */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.footer-logo {
+  height: 30px; /* Adjust as needed */
+}

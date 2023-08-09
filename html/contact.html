@@ -6,12 +6,172 @@
     <title>Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/stylesheet/contact.css">
+    <link rel="stylesheet" href="/stylesheet/main.css">
 </head>
 <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="nav-logo" src="/images/main-logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Explore</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li> 
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+      
+      
+      <div class="container-fluid contact-wrapper d-flex flex-column min-vh-100">
+        <div class="row justify-content-center contact-intro text-center d-lg-none">
+            <!-- Image on the top for smallest screens and on the left for screens 768px or above -->
+            <div class="col-12 col-md-6 order-1 order-md-1">
+                <img src="/images/about banner.png" alt="" class="contact-img img-fluid mb-3">
+            </div>
+            
+            <!-- Text and buttons on the bottom for smallest screens and on the right for screens 768px or above -->
+            <div class="col-12 col-md-6 order-2 order-md-2 d-flex flex-column justify-content-center">
+                <h1 class="h1">Get In Touch</h1>
+                <p>I'm excited to connect with you and discuss how we can collaborate on your next project. Whether you have a specific design idea in mind or need guidance on transforming your vision into reality, I'm here to help.</p>
+                
+                <div class="d-flex justify-content-center flex-wrap">
+                    <button type="button" class="btn btn-outline-danger m-2 rounded-pill">Connect</button>
+                    <button type="button" class="btn btn-outline-danger m-2 rounded-pill">Connect</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-5 d-lg-none">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control custom-border" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control custom-border" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="projectName" class="form-label">Project Name</label>
+                    <input type="text" class="form-control custom-border" id="projectName" placeholder="Enter project name">
+                </div>
+                <div class="mb-3">
+                    <label for="deadline" class="form-label">Project Estimated Deadline</label>
+                    <input type="date" class="form-control custom-border" id="deadline">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Few words about the project</label>
+                    <textarea class="form-control custom-border" id="description" rows="3" placeholder="Describe your project"></textarea>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-outline-danger mt-3 rounded-pill">Submit</button>
+                </div>
+            </form>
+        </div>
     
+    
+    <!-- FORM FOR LARGER SCREENS -->
+   
+    <div class="container-fluid d-none d-lg-block d-flex justify-content-center align-items-center contact-wrapper">
+      <div class="row w-100">
+          <!-- Left side: Image, h1, paragraph, and buttons -->
+          <div class="col-lg-6 text-center">
+              <img src="/images/about banner.png" alt="" class="contact-img img-fluid mb-3">
+              <h1 class="h1">Get In Touch</h1>
+              <p>I'm excited to connect with you and discuss how we can collaborate on your next project. Whether you have a specific design idea in mind or need guidance on transforming your vision into reality, I'm here to help.</p>
+              <div class="d-flex justify-content-center flex-wrap">
+                  <button type="button" class="btn btn-outline-danger m-2 rounded-pill">Connect</button>
+                  <button type="button" class="btn btn-outline-danger m-2 rounded-pill">Connect</button>
+              </div>
+          </div>
+          
+          <!-- Right side: Form -->
+          <div class="col-lg-6">
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input type="text" class="form-control custom-border" id="name" placeholder="Enter your name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control custom-border" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="projectName" class="form-label">Project Name</label>
+                      <input type="text" class="form-control custom-border" id="projectName" placeholder="Enter project name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="deadline" class="form-label">Project Estimated Deadline</label>
+                      <input type="date" class="form-control custom-border" id="deadline">
+                  </div>
+                  <div class="mb-3">
+                      <label for="description" class="form-label">Few words about the project</label>
+                      <textarea class="form-control custom-border" id="description" rows="3" placeholder="Describe your project"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-outline-danger mt-3 rounded-pill">Submit</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  
+      </main>
 
 
+
+    <footer class="container-fluid bg-dark text-white py-3">
+        <div class="row text-center">
+          <div class="col-6 col-md-3">
+            <h5>Let's Talk</h5>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="index.html" class="text-white">Home</a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="about.html" class="text-white">About</a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="https://www.instagram.com" target="_blank"><img class="footer-logo" src="/images/instagram_logo.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="footer-logo" src="/images/linkedin_logo.svg" alt="LinkedIn"></a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-6 col-md-3">
+            <p>devmehra422@gmail.com</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="services.html" class="text-white">Services</a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="resume.html" class="text-white">Resume</a>
+          </div>
+          <div class="col-6 col-md-3">
+            <a href="https://github.com" target="_blank"><img class="footer-logo" src="/images/github_logo.svg" alt="GitHub"></a>
+            <a href="https://www.youtube.com" target="_blank"><img class="footer-logo" src="/images/youtube_logo.svg" alt="YouTube"></a>
+          </div>
+        </div>
+      </footer>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
