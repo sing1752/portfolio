@@ -94,14 +94,25 @@
       <div class="row w-100">
           <!-- Left side: Image, h1, paragraph, and buttons -->
           <div class="col-lg-6 text-center">
-              <img src="/images/about banner.png" alt="" class="contact-img img-fluid mb-3">
-              <h1 class="h1">Get In Touch</h1>
-              <p>I'm excited to connect with you and discuss how we can collaborate on your next project. Whether you have a specific design idea in mind or need guidance on transforming your vision into reality, I'm here to help.</p>
-              <div class="d-flex justify-content-center flex-wrap">
-                  <button type="button" class="btn btn-outline-danger m-2 rounded-pill">Connect</button>
-                  <button type="button" class="btn btn-outline-danger m-2 rounded-pill">Connect</button>
-              </div>
-          </div>
+            <img 
+                srcset="/images/about_banner_sm.png 540w,
+                        /images/about_banner_md.png 720w,
+                        /images/about_banner_lg.png 960w"
+                
+                sizes="(max-width: 767px) 540px,
+                       (max-width: 991px) 720px,
+                       (max-width: 1199px) 960px,
+                       1140px"
+                src="/images/about-banner-lg.png" 
+                alt="" 
+                class="contact-img img-fluid mb-3">
+            <h1 class="h1">Get In Touch</h1>
+            <p>I'm excited to connect with you and discuss how we can collaborate on your next project. Whether you have a specific design idea in mind or need guidance on transforming your vision into reality, I'm here to help.</p>
+            <div class="d-flex justify-content-center flex-wrap">
+                <button type="button" class="btn btn-outline-danger m-2 rounded-pill">Connect</button>
+                <button type="button" class="btn btn-outline-danger m-2 rounded-pill">Connect</button>
+            </div>
+        </div>
           
           <!-- Right side: Form -->
           <div class="col-lg-6">
