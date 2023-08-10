@@ -6,142 +6,147 @@
     <title>Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/stylesheet/main.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="nav-logo" src="/images/main-logo.png"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="nav-logo" src="/images/main-logo.png"></a>
+        
+        <!-- Navbar toggler button for smaller screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Explore</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Navbar links for all screens -->
+            <ul class="navbar-nav ms-auto fs-5"> <!-- fs-5 for font size -->
+                <li class="nav-item mx-3"> <!-- mx-3 for horizontal margin -->
+                    <a class="nav-link text-decoration-none" aria-current="page" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="services.html">Services</a>
+                <li class="nav-item mx-3">
+                    <a class="nav-link text-decoration-none active" href="services.html">Services</a>
                 </li> 
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li> 
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <main>
-       <div class="container-fluid services-wrapper">
-    <div class="row justify-content-center services-intro">
-
-        <!-- Intro Section -->
-        <div class="col-12 col-md-6 col-lg-4 text-center">
-          <img src="/images/services.png" 
-               srcset="/images/services_sm.png 540w, 
-                       /images/services_md.png 720w, 
-                       /images/services_lg.png 960w"
-               sizes="(max-width: 575px) 540px,
-                      (max-width: 767px) 720px,
-                      960px"
-               alt="" class="img-fluid mb-3">
-          <h1 class="h1">Here some services I provide</h1>
-          <p>As a versatile UI/UX designer with a diverse skill set, I offer a range of services to bring your digital projects to life. My goal is to create captivating and user-centered experiences that leave a lasting impression on your audience.</p>
-          <button type="button" class="btn btn-outline-danger m-5">Connect</button>
-      </div>
-
-        <!-- Services Section -->
-        <div class="col-12 col-md-6 col-lg-8 mt-4">
-            <div class="row justify-content-center services">
-                <!-- First Service -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="row align-items-center">
-                      <div class="col-12 col-lg-6 text-center">
-                        <img src="/images/web-development.png" 
-                        srcset="/images/web-development.png 500w, 
-                                /images/web_development_md.png 720w, 
-                                /images/web_development_lg.png 960w"
-                        sizes="(max-width: 575px) 500px,
-                               (max-width: 767px) 720px,
-                               960px"
-                        alt="" class="img-fluid mb-3">
-                    </div>
-                        <div class="col-12 col-lg-6">
-                            <p>Bringing your designs to life through responsive and optimized web development. Whether it's a personal website or an e-commerce platform, I code with the latest technologies to ensure seamless performance across devices.</p>
-                        </div>
-                        
-                    </div>
-                </div>
-        
-                <!-- Second Service -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="row align-items-center">
-                      <div class="col-12 col-lg-6 text-center">
-                        <img src="/images/Ui.png" 
-                        srcset="/images/Ui.png 500w, 
-                                /images/Ui_md.png 720w, 
-                                /images/Ui_lg.png 960w"
-                        sizes="(max-width: 575px) 500px,
-                               (max-width: 767px) 720px,
-                               960px"
-                        alt="" class="img-fluid mb-3">
-                    </div>
-                        <div class="col-12 col-lg-6">
-                            <p>Crafting visually stunning and intuitive interfaces that align with your brand identity and engage users. I focus on creating seamless interactions and aesthetically pleasing designs that enhance the overall user experience.</p>
-                        </div>
-                        
-                    </div>
-                </div>
-        
-                <!-- Third Service -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="row align-items-center">
-                      <div class="col-12 col-lg-6 text-center">
-                        <img src="/images/Ux.png" 
-                        srcset="/images/Ux.png 500w, 
-                                /images/Ux_md.png 720w, 
-                                /images/Ux_lg.png 960w"
-                        sizes="(max-width: 575px) 500px,
-                               (max-width: 767px) 720px,
-                               960px"
-                        alt="" class="img-fluid mb-3">
-                    </div>
-                        <div class="col-12 col-lg-6">
-                            <p>Understanding your users' needs and pain points to design solutions that prioritize their satisfaction. I conduct thorough research, develop user personas, and map user journeys to create highly functional and user-friendly products.</p>
-                        </div>
-                       
-                    </div>
-                </div>
-        
-                <!-- Fourth Service -->
-                <div class="col-12 col-md-6 mb-4">
-                    <div class="row align-items-center">
-                      <div class="col-12 col-lg-6 text-center">
-                        <img src="/images/videography.png" 
-                        srcset="/images/videography.png 500w, 
-                                /images/videography_md.png 720w, 
-                                /images/videography_lg.png 960w"
-                        sizes="(max-width: 575px) 500px,
-                               (max-width: 767px) 720px,
-                               960px"
-                        alt="" class="img-fluid mb-3">
-                    </div>
-                        <div class="col-12 col-lg-6">
-                            <p>Creating moody, dark, aesthetic, and cinematic short movies and projects. I specialize in capturing compelling visuals and narratives that evoke emotion and tell impactful stories. Whether it's promotional videos, short films, or creative visual content, I bring a unique and artistic approach to each project.</p>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+                <li class="nav-item mx-3 position-relative"> <!-- position-relative for the active indicator -->
+                    <a class="nav-link text-decoration-none " href="contact.html">Contact</a>
+                </li> 
+            </ul>
         </div>
     </div>
-</div>
+</nav>
+
+
+
+
+
+
+      <main>
+        <div class="container-fluid services-wrapper p-auto" itemscope itemtype="http://schema.org/Service">
+          <div class="row justify-content-center services-intro">
+      
+              <!-- Intro Section -->
+              <div class="col-12 col-md-6 col-lg-4 text-center">
+                  <img src="/images/services.png" 
+                       srcset="/images/services_sm.png 540w, 
+                               /images/services_md.png 720w, 
+                               /images/services_lg.png 960w"
+                       sizes="(max-width: 575px) 540px,
+                              (max-width: 767px) 720px,
+                              960px"
+                       alt="Services Introduction Image" class="img-fluid mb-3">
+                  <h1 class="h1" itemprop="name">Here some services I provide</h1>
+                  <p itemprop="description">As a versatile UI/UX designer with a diverse skill set, I offer a range of services to bring your digital projects to life. My goal is to create captivating and user-centered experiences that leave a lasting impression on your audience.</p>
+                  <button type="button" class="btn btn-outline-danger m-5" role="button">Connect</button>
+              </div>
+      
+              <!-- Services Section -->
+              <div class="col-12 col-md-6 col-lg-8 mt-4">
+                  <div class="row justify-content-center services">
+      
+                      <!-- First Service: Web Development -->
+                      <div class="col-12 col-md-6 mb-4" itemscope itemtype="http://schema.org/Service">
+                          <div class="row align-items-center">
+                              <div class="col-12 col-lg-6 text-center">
+                                  <img src="/images/web-development.png" 
+                                       srcset="/images/web-development.png 500w, 
+                                               /images/web_development_md.png 720w, 
+                                               /images/web_development_lg.png 960w"
+                                       sizes="(max-width: 575px) 500px,
+                                              (max-width: 767px) 720px,
+                                              960px"
+                                       alt="Web Development Icon" class="img-fluid mb-3" itemprop="image">
+                              </div>
+                              <div class="col-12 col-lg-6">
+                                  <p itemprop="description">Bringing your designs to life through responsive and optimized web development. Whether it's a personal website or an e-commerce platform, I code with the latest technologies to ensure seamless performance across devices.</p>
+                              </div>
+                          </div>
+                      </div>
+      
+                      <!-- Second Service: UI Design -->
+                      <div class="col-12 col-md-6 mb-4" itemscope itemtype="http://schema.org/Service">
+                          <div class="row align-items-center">
+                              <div class="col-12 col-lg-6 text-center">
+                                  <img src="/images/Ui.png" 
+                                       srcset="/images/Ui.png 500w, 
+                                               /images/Ui_md.png 720w, 
+                                               /images/Ui_lg.png 960w"
+                                       sizes="(max-width: 575px) 500px,
+                                              (max-width: 767px) 720px,
+                                              960px"
+                                       alt="UI Design Icon" class="img-fluid mb-3" itemprop="image">
+                             </div>
+                              <div class="col-12 col-lg-6">
+                                  <p itemprop="description">Crafting visually stunning and intuitive interfaces that align with your brand identity and engage users. I focus on creating seamless interactions and aesthetically pleasing designs that enhance the overall user experience.</p>
+                              </div>
+                          </div>
+                      </div>
+      
+                      <!-- Third Service: UX Design -->
+                      <div class="col-12 col-md-6 mb-4" itemscope itemtype="http://schema.org/Service">
+                          <div class="row align-items-center">
+                              <div class="col-12 col-lg-6 text-center">
+                                  <img src="/images/Ux.png" 
+                                       srcset="/images/Ux.png 500w, 
+                                               /images/Ux_md.png 720w, 
+                                               /images/Ux_lg.png 960w"
+                                       sizes="(max-width: 575px) 500px,
+                                              (max-width: 767px) 720px,
+                                              960px"
+                                       alt="UX Design Icon" class="img-fluid mb-3" itemprop="image">
+                              </div>
+                              <div class="col-12 col-lg-6">
+                                  <p itemprop="description">Understanding your users' needs and pain points to design solutions that prioritize their satisfaction. I conduct thorough research, develop user personas, and map user journeys to create highly functional and user-friendly products.</p>
+                              </div>
+                          </div>
+                      </div>
+      
+                      <!-- Fourth Service: Videography -->
+                      <div class="col-12 col-md-6 mb-4" itemscope itemtype="http://schema.org/Service">
+                          <div class="row align-items-center">
+                              <div class="col-12 col-lg-6 text-center">
+                                  <img src="/images/videography.png" 
+                                       srcset="/images/videography.png 500w, 
+                                               /images/videography_md.png 720w, 
+                                               /images/videography_lg.png 960w"
+                                       sizes="(max-width: 575px) 500px,
+                                              (max-width: 767px) 720px,
+                                              960px"
+                                       alt="Videography Icon" class="img-fluid mb-3" itemprop="image">
+                              </div>
+                              <div class="col-12 col-lg-6">
+                                  <p itemprop="description">Creating moody, dark, aesthetic, and cinematic short movies and projects. I specialize in capturing compelling visuals and narratives that evoke emotion and tell impactful stories. Whether it's promotional videos, short films, or creative visual content, I bring a unique and artistic approach to each project.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
 
         
       
@@ -149,38 +154,60 @@
       
 
 
-    <footer class="container-fluid bg-dark text-white py-3">
-        <div class="row text-center">
-          <div class="col-6 col-md-3">
-            <h5>Let's Talk</h5>
-          </div>
-          <div class="col-6 col-md-3">
-            <a href="index.html" class="text-white">Home</a>
-          </div>
-          <div class="col-6 col-md-3">
-            <a href="about.html" class="text-white">About</a>
-          </div>
-          <div class="col-6 col-md-3">
-            <a href="https://www.instagram.com" target="_blank"><img class="footer-logo" src="/images/instagram_logo.svg" alt="Instagram"></a>
-            <a href="https://www.linkedin.com" target="_blank"><img class="footer-logo" src="/images/linkedin_logo.svg" alt="LinkedIn"></a>
-          </div>
+      <footer class="container-fluid bg-dark text-white py-5" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="container">
+            <div class="row mb-4">
+                <!-- Let's Talk Section -->
+                <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center" itemscope itemtype="http://schema.org/ContactPoint">
+                    <h5>Let's Talk</h5>
+                    <p class="mt-2" itemprop="email">devmehra422@gmail.com</p>
+                </div>
+    
+                <!-- Page Links Section -->
+                <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <a href="index.html" class="text-white d-block" itemprop="url">Home</a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="about.html" class="text-white d-block" itemprop="url">About</a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="services.html" class="text-white d-block" itemprop="url">Services</a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="resume.html" class="text-white d-block" itemprop="url">Resume</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Social Links Section -->
+                <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center" itemscope itemtype="http://schema.org/Organization">
+                    <div class="row">
+                        <div class="col-6 mb-3 text-end">
+                            <a href="https://www.instagram.com" target="_blank" itemprop="sameAs"><img class="footer-logo" src="/images/instagram.png" alt="Instagram Logo"></a>
+                        </div>
+                        <div class="col-6 mb-3 text-start">
+                            <a href="https://www.linkedin.com" target="_blank" itemprop="sameAs"><img class="footer-logo" src="/images/linkedin.png" alt="LinkedIn Logo"></a>
+                        </div>
+                        <div class="col-6 mb-3 text-end">
+                            <a href="https://github.com" target="_blank" itemprop="sameAs"><img class="footer-logo" src="/images/github.png" alt="GitHub Logo"></a>
+                        </div>
+                        <div class="col-6 mb-3 text-start">
+                            <a href="https://www.youtube.com" target="_blank" itemprop="sameAs"><img class="footer-logo" src="/images/youtube.png" alt="YouTube Logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright Section -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="mt-4" itemprop="copyrightHolder">&copy; 2023 Devjeet Singh. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-        <div class="row text-center">
-          <div class="col-6 col-md-3">
-            <p>devmehra422@gmail.com</p>
-          </div>
-          <div class="col-6 col-md-3">
-            <a href="services.html" class="text-white">Services</a>
-          </div>
-          <div class="col-6 col-md-3">
-            <a href="resume.html" class="text-white">Resume</a>
-          </div>
-          <div class="col-6 col-md-3">
-            <a href="https://github.com" target="_blank"><img class="footer-logo" src="/images/github_logo.svg" alt="GitHub"></a>
-            <a href="https://www.youtube.com" target="_blank"><img class="footer-logo" src="/images/youtube_logo.svg" alt="YouTube"></a>
-          </div>
-        </div>
-      </footer>
+    </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
