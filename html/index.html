@@ -1,371 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Aesthetics</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/stylesheet/main.css">
 </head>
+
 <body itemscope itemtype="http://schema.org/WebPage">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#" itemprop="url"><img class="nav-logo" src="/images/main-logo.png" alt="Main Logo" itemprop="logo"></a>
-        
-        <!-- Navbar toggler button for smaller screens -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" itemprop="url"><img class="nav-logo" src="/images/main-logo.png"
+                    alt="Main Logo" itemprop="logo"></a>
 
-            <!-- Navbar links for all screens -->
-            <ul class="navbar-nav ms-auto fs-5" role="menu" itemscope itemtype="http://schema.org/SiteNavigationElement"> <!-- fs-5 for font size -->
-                <li class="nav-item mx-3" role="presentation"> <!-- mx-3 for horizontal margin -->
-                    <a class="nav-link text-decoration-none active" aria-current="page" href="index.html" itemprop="url" role="menuitem"><span itemprop="name">Home</span></a>
-                </li>
-                <li class="nav-item mx-3" role="presentation">
-                    <a class="nav-link text-decoration-none" href="services.html" itemprop="url" role="menuitem"><span itemprop="name">Services</span></a>
-                </li> 
-                <li class="nav-item mx-3 position-relative" role="presentation"> <!-- position-relative for the active indicator -->
-                  <a class="nav-link text-decoration-none" href="contact.html" itemprop="url" role="menuitem"><span itemprop="name">Contact</span></a>
-              </li> 
-            </ul>
+            <!-- Navbar toggler button for smaller screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!-- Navbar links for all screens -->
+                <ul class="navbar-nav ms-auto fs-5" role="menu" itemscope
+                    itemtype="http://schema.org/SiteNavigationElement">
+                    <!-- fs-5 for font size -->
+                    <li class="nav-item mx-3" role="presentation">
+                        <!-- mx-3 for horizontal margin -->
+                        <a class="nav-link text-decoration-none active" aria-current="page" href="index.html"
+                            itemprop="url" role="menuitem"><span itemprop="name">Home</span></a>
+                    </li>
+                    <li class="nav-item mx-3" role="presentation">
+                        <a class="nav-link text-decoration-none" href="services.html" itemprop="url" role="menuitem"><span
+                                itemprop="name">Services</span></a>
+                    </li>
+                    <li class="nav-item mx-3 position-relative" role="presentation">
+                        <!-- position-relative for the active indicator -->
+                        <a class="nav-link text-decoration-none" href="contact.html" itemprop="url" role="menuitem"><span
+                                itemprop="name">Contact</span></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-
-      
-<main itemprop="mainContentOfPage">
-  <div class="main-wrapper">
-      <section class="intro text-center bg-dark" itemscope itemtype="http://schema.org/AboutPage">
-          <div class="container">
-              <div class="row align-items-center">
-                  <div class="col-md-6">
-                      <img src="/images/hero_image.jpeg" 
-                      srcset="/images/hero_image_sm.jpeg 500w, 
+    <main itemprop="mainContentOfPage">
+        <div class="main-wrapper">
+            <section class="intro text-center bg-dark" itemscope itemtype="http://schema.org/AboutPage">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <img src="/images/hero_image.jpeg"
+                                srcset="/images/hero_image_sm.jpeg 500w, 
                               /images/hero_image_md.jpeg 720w, 
                               /images/hero_image_lg.jpeg 960w"
-                      sizes="(max-width: 575px) 500px,
+                                sizes="(max-width: 575px) 500px,
                              (max-width: 767px) 720px,
-                             960px"
-                      alt="Dev's Portrait" class="img-fluid rounded mx-auto d-block py-2 px-2" itemprop="image">
-                  </div>
-                  <div class="col-md-6 mt-5">
-                      <h1 class="m-2 h1" itemprop="headline">Hi! Dev here,</h1>
-                      <p itemprop="description">I am an UX/UI designer with a passion for creating engaging, meaningful experiences through intuitive interface and interactive design</p>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-
-         <section class="projects text-start" itemscope itemtype="http://schema.org/ItemList">
-            <h2 class="section-title pt-3 pb-3 h2" itemprop="name">Projects</h2>
-            <!-- FOR SMALL SCREEN PROJECTS -->
-            <div class="d-lg-none">
-              <div id="carouselExampleCaptions" class="carousel slide" role="list">
-                  <div class="carousel-indicators" role="tablist">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner" role="listbox"> 
-                  <div class="carousel-item active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <img src="/images/photography  portfolio.png" class="d-block w-100" alt="Photography Portfolio" itemprop="image">
-                    <div class="carousel-caption d-md-none">
-                        <div class="overlay">
-                            <h3 itemprop="name">Photography Portfolio</h3>
-                            <p><button type="button" class="btn btn-danger">Visit</button></p>
+                             960px" alt="Dev's Portrait"
+                                class="img-fluid rounded mx-auto d-block py-2 px-2" itemprop="image">
+                        </div>
+                        <div class="col-md-6 mt-5">
+                            <h1 class="m-2 h1" itemprop="headline">Hi! Dev here,</h1>
+                            <p itemprop="description">I am an UX/UI designer with a passion for creating engaging,
+                                meaningful experiences through intuitive interface and interactive design</p>
                         </div>
                     </div>
                 </div>
-                      
-                  <!-- Carousel Item: Interview Project -->
-<div class="carousel-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-  <img src="/images/interview project.png" class="d-block w-100" alt="Interview Project Image" itemprop="image">
-  <div class="carousel-caption d-md-none">
-      <div class="overlay">
-          <h3 itemprop="name">Interview Project</h3>
-          <p><button type="button" class="btn btn-danger">Visit</button></p>
-      </div>
-  </div>
-</div>
+            </section>
 
-<!-- Carousel Item: Movie Poster -->
-<div class="carousel-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-  <img src="/images/Devjeet_Singh_Movie_Poster.png" class="d-block w-100" alt="Devjeet Singh Movie Poster" itemprop="image">
-  <div class="carousel-caption d-md-none">
-      <div class="overlay">
-          <h3 itemprop="name">Movie Poster</h3>
-          <p><button type="button" class="btn btn-danger">Visit</button></p>
-      </div>
-  </div>
-</div>
+            <section class="projects text-start" itemscope itemtype="http://schema.org/ItemList">
+                <h2 class="section-title pt-3 pb-3 h2" itemprop="name">Projects</h2>
+                <!-- FOR SMALL SCREEN PROJECTS -->
+                <div class="d-lg-none">
+                    <div id="carouselExampleCaptions" class="carousel slide" role="list">
+                        <div class="carousel-indicators" role="tablist">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active" itemprop="itemListElement"
+                                itemscope itemtype="http://schema.org/ListItem">
+                                <img src="/images/photography_portfolio.png" class="d-block w-100"
+                                    alt="Photography Portfolio" itemprop="image">
+                                <div class="carousel-caption d-md-none">
+                                    <div class="overlay">
+                                        <h3 itemprop="name">Photography Portfolio</h3>
+                                        <p><button type="button" class="btn btn-danger">Visit</button></p>
+                                    </div>
+                                </div>
+                            </div>
 
-<!-- Carousel Item: Finiest Bakery -->
-<div class="carousel-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-  <img src="/images/finiest bakery.png" class="d-block w-100" alt="Finiest Bakery Image" itemprop="image">
-  <div class="carousel-caption d-md-none">
-      <div class="overlay">
-          <h3 itemprop="name">Finiest Bakery</h3>
-          <p><button type="button" class="btn btn-danger">Visit</button></p>
-      </div>
-  </div>
-</div>
+                            <!-- Carousel Item: Interview Project -->
+                            <div class="carousel-item" itemprop="itemListElement"
+                                itemscope itemtype="http://schema.org/ListItem">
+                                <img src="/images/interview_project.png" class="d-block w-100"
+                                    alt="Interview Project Image" itemprop="image">
+                                <div class="carousel-caption d-md-none">
+                                    <div class="overlay">
+                                        <h3 itemprop="name">Interview Project</h3>
+                                        <p><button type="button" class="btn btn-danger">Visit</button></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Item: Movie Poster -->
+                            <div class="carousel-item" itemprop="itemListElement"
+                                itemscope itemtype="http://schema.org/ListItem">
+                                <img src="/images/horror-poster.png" class="d-block w-100"
+                                    alt="Devjeet Singh Movie Poster" itemprop="image">
+                                <div class="carousel-caption d-md-none">
+                                    <div class="overlay">
+                                        <h3 itemprop="name">Movie Poster</h3>
+                                        <p><button type="button" class="btn btn-danger">Visit</button></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Item: Finiest Bakery -->
+                            <div class="carousel-item" itemprop="itemListElement"
+                                itemscope itemtype="http://schema.org/ListItem">
+                                <img src="/images/finiest_bakery.png" class="d-block w-100" alt="Finiest Bakery Image"
+                                    itemprop="image">
+                                <div class="carousel-caption d-md-none">
+                                    <div class="overlay">
+                                        <h3 itemprop="name">Finiest Bakery</h3>
+                                        <p><button type="button" class="btn btn-danger">Visit</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </div>
+            </section>
+                <!-- FOR LARGE SCREEN PROJECTS -->
 
-          <!-- FOR LARGE SCREEN PROJECTS -->
+                <div class="d-none d-lg-block">
+                    <div class="row">
+                        <!-- Project 1 -->
+                        <div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemprop="itemListElement"
+                            itemscope itemtype="http://schema.org/ListItem">
+                            <div class="card hoverable">
+                                <img src="/images/photography_portfolio.png" class="card-img-top"
+                                    alt="Photography Portfolio" itemprop="image">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                    <h5 class="card-title text-center" itemprop="name">Photography Portfolio</h5>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
+                        </div>
 
-          <div class="d-none d-lg-block">
-            <div class="row">
-                <!-- Project 1 -->
-                <div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                    <div class="card hoverable">
-                        <img src="/images/photography  portfolio.png" class="card-img-top" alt="Photography Portfolio" itemprop="image">
-                        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                            <h5 class="card-title text-center" itemprop="name">Photography Portfolio</h5>
+                        <!-- Project 2: Finiest Bakery -->
+                        <div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <div class="card hoverable" role="group" aria-label="Finiest Bakery Project">
+                                <img src="/images/finiest_bakery.png" class="card-img-top" alt="Finiest Bakery Image"
+                                    itemprop="image">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                    <h5 class="card-title text-center" itemprop="name">Finiest Bakery</h5>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
+                        </div>
+
+                        <!-- Project 3: Interview Project -->
+                        <div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <div class="card hoverable" role="group" aria-label="Interview Project">
+                                <img src="/images/interview_project.png" class="card-img-top"
+                                    alt="Interview Project Image" itemprop="image">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                    <h5 class="card-title text-center" itemprop="name">Interview Project</h5>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
+                        </div>
+
+                        <!-- Project 4: Mood Board -->
+                        <div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <div class="card hoverable" role="group" aria-label="Mood Board Project">
+                                <img src="/images/mood.png" class="card-img-top" alt="Mood Board Image"
+                                    itemprop="image">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                    <h5 class="card-title text-center" itemprop="name">Mood Board</h5>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
+                        </div>
+
+                        <!-- Project 5: Breaking The Loop -->
+                        <div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <div class="card hoverable" role="group" aria-label="Breaking The Loop Project">
+                                <img src="/images/breaking_loop.jpg" class="card-img-top" alt="Breaking The Loop Image"
+                                    itemprop="image">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                    <h5 class="card-title text-center" itemprop="name">Breaking The Loop</h5>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
+                        </div>
+
+                        <!-- Project 6: Horror Poster -->
+                        <div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope
+                            itemtype="http://schema.org/ListItem">
+                            <div class="card hoverable fixed-height-card overflow-hidden" role="group"
+                                aria-label="Horror Poster Project">
+                                <img src="/images/horror-poster.png" class="card-img-top fit-cover"
+                                    alt="Devjeet Singh Horror Poster" itemprop="image">
+                                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                    <h5 class="card-title text-center" itemprop="name">Horror Poster</h5>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
                 </div>
-
-
-               <!-- Project 2: Finiest Bakery -->
-<div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope itemtype="http://schema.org/ListItem">
-    <div class="card hoverable" role="group" aria-label="Finiest Bakery Project">
-        <img src="/images/finiest bakery.png" class="card-img-top" alt="Finiest Bakery Image" itemprop="image">
-        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <h5 class="card-title text-center" itemprop="name">Finiest Bakery</h5>
-        </div>
-    </div>
-    <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
-</div>
-
-<!-- Project 3: Interview Project -->
-<div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope itemtype="http://schema.org/ListItem">
-    <div class="card hoverable" role="group" aria-label="Interview Project">
-        <img src="/images/interview project.png" class="card-img-top" alt="Interview Project Image" itemprop="image">
-        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <h5 class="card-title text-center" itemprop="name">Interview Project</h5>
-        </div>
-    </div>
-    <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
-</div>
-
-<!-- Project 4: Mood Board -->
-<div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope itemtype="http://schema.org/ListItem">
-    <div class="card hoverable" role="group" aria-label="Mood Board Project">
-        <img src="/images/mood.png" class="card-img-top" alt="Mood Board Image" itemprop="image">
-        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <h5 class="card-title text-center" itemprop="name">Mood Board</h5>
-        </div>
-    </div>
-    <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
-</div>
-
-<!-- Project 5: Breaking The Loop -->
-<div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope itemtype="http://schema.org/ListItem">
-    <div class="card hoverable" role="group" aria-label="Breaking The Loop Project">
-        <img src="/images/thumbnail.jpg" class="card-img-top" alt="Breaking The Loop Image" itemprop="image">
-        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <h5 class="card-title text-center" itemprop="name">Breaking The Loop</h5>
-        </div>
-    </div>
-    <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
-</div>
-
-<!-- Project 6: Horror Poster -->
-<div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope itemtype="http://schema.org/ListItem">
-    <div class="card hoverable fixed-height-card overflow-hidden" role="group" aria-label="Horror Poster Project">
-        <img src="/images/Devjeet_Singh_Movie_Poster.png" class="card-img-top fit-cover" alt="Devjeet Singh Horror Poster" itemprop="image">
-        <div class="card-img-overlay d-flex justify-content-center align-items-center">
-            <h5 class="card-title text-center" itemprop="name">Horror Poster</h5>
-        </div>
-    </div>
-    <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
-</div>
-                
-                  
-              </div>                       
             </div>
-        </div>
-      </div>
+      
 
-    </section>
-
-    
-    <section class="approach" itemscope itemtype="http://schema.org/HowToSection">
-      <section class="container-fluid">
-          <h2 class="section-title pt-3 pb-3 h2" itemprop="name">My Approach</h2>
-        <div class="row">
-            <!-- Brief Section -->
-            <div class="col-md-6 col-lg-3">
-              <div class="circle mb-3 position-relative">
-                  <img class="circle-img" 
-                       src="/images/approach.png" 
-                       srcset="/images/approach_sm.png 500w, 
+        <section class="approach" itemscope itemtype="http://schema.org/HowToSection">
+            <section class="container-fluid">
+                <h2 class="section-title pt-3 pb-3 h2" itemprop="name">My Approach</h2>
+                <div class="row">
+                    <!-- Brief Section -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="circle mb-3 position-relative">
+                            <img class="circle-img" src="/images/approach.png"
+                                srcset="/images/approach_sm.png 500w, 
                                /images/approach_md.png 720w, 
                                /images/approach_lg.png 960w"
-                       sizes="(max-width: 575px) 500px,
+                                sizes="(max-width: 575px) 500px,
                               (max-width: 767px) 720px,
-                              960px"
-                       alt="">
-                  <sup class="position-absolute top-0 end-0 translate-middle bg-danger text-dark rounded px-1 me-2 mt-2">1</sup>
-                  <div class="circle-content text-center">
-                      <h3 class="circle-title">Brief</h3>
-                      <div class="overlay">
-                          <p>Understanding the project requirements, objectives, and client's expectations to set a clear roadmap.</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          
-          
-    
-            <!-- Analytics Section -->
-            <div class="col-md-6 col-lg-3">
-                <div class="circle mb-3 position-relative">
-                  <img class="circle-img" 
-                  src="/images/approach.png" 
-                  srcset="/images/approach_sm.png 500w, 
+                              960px" alt="">
+                            <sup class="position-absolute top-0 end-0 translate-middle bg-danger text-dark rounded px-1 me-2 mt-2">1</sup>
+                            <div class="circle-content text-center">
+                                <h3 class="circle-title">Brief</h3>
+                                <div class="overlay">
+                                    <p>Understanding the project requirements, objectives, and client's expectations to set
+                                        a clear roadmap.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analytics Section -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="circle mb-3 position-relative">
+                            <img class="circle-img" src="/images/approach.png"
+                                srcset="/images/approach_sm.png 500w, 
                           /images/approach_md.png 720w, 
                           /images/approach_lg.png 960w"
-                  sizes="(max-width: 575px) 500px,
+                                sizes="(max-width: 575px) 500px,
                          (max-width: 767px) 720px,
-                         960px"
-                  alt="">
-                  <sup class="position-absolute top-0 end-0 translate-middle bg-danger text-dark rounded px-1 me-2 mt-2">2</sup>
-                    <div class="circle-content text-center">
-                        <h3 class="circle-title">Analytics</h3>
-                        <div class="overlay">
-                            <p>Researching and analyzing user behavior, market trends, and competitors to inform design decisions.</p>
+                         960px" alt="">
+                            <sup class="position-absolute top-0 end-0 translate-middle bg-danger text-dark rounded px-1 me-2 mt-2">2</sup>
+                            <div class="circle-content text-center">
+                                <h3 class="circle-title">Analytics</h3>
+                                <div class="overlay">
+                                    <p>Researching and analyzing user behavior, market trends, and competitors to inform
+                                        design decisions.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-    
-            <!-- Prototyping Section -->
-            <div class="col-md-6 col-lg-3">
-                <div class="circle mb-3 position-relative">
-                  <img class="circle-img" 
-                  src="/images/approach.png" 
-                  srcset="/images/approach_sm.png 500w, 
+
+                    <!-- Prototyping Section -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="circle mb-3 position-relative">
+                            <img class="circle-img" src="/images/approach.png"
+                                srcset="/images/approach_sm.png 500w, 
                           /images/approach_md.png 720w, 
                           /images/approach_lg.png 960w"
-                  sizes="(max-width: 575px) 500px,
+                                sizes="(max-width: 575px) 500px,
                          (max-width: 767px) 720px,
-                         960px"
-                  alt="">
-                  <sup class="position-absolute top-0 end-0 translate-middle bg-danger text-dark rounded px-1 me-2 mt-2">3</sup>
-                    <div class="circle-content text-center">
-                        <h3 class="circle-title">Prototyping</h3>
-                        <div class="overlay">
-                            <p>Creating interactive prototypes to visualize the final product and gather feedback for refinements.</p>
+                         960px" alt="">
+                            <sup class="position-absolute top-0 end-0 translate-middle bg-danger text-dark rounded px-1 me-2 mt-2">3</sup>
+                            <div class="circle-content text-center">
+                                <h3 class="circle-title">Prototyping</h3>
+                                <div class="overlay">
+                                    <p>Creating interactive prototypes to visualize the final product and gather feedback
+                                        for refinements.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-    
-            <!-- Presentation Section -->
-            <div class="col-md-6 col-lg-3">
-                <div class="circle mb-3 position-relative">
-                  <img class="circle-img" 
-                  src="/images/approach.png" 
-                  srcset="/images/approach_sm.png 500w, 
+
+                    <!-- Presentation Section -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="circle mb-3 position-relative">
+                            <img class="circle-img" src="/images/approach.png"
+                                srcset="/images/approach_sm.png 500w, 
                           /images/approach_md.png 720w, 
                           /images/approach_lg.png 960w"
-                  sizes="(max-width: 575px) 500px,
+                                sizes="(max-width: 575px) 500px,
                          (max-width: 767px) 720px,
-                         960px"
-                  alt="">
-                  <sup class="position-absolute top-0 end-0 translate-middle bg-danger text-dark rounded px-1 me-2 mt-2">4</sup>
-                    <div class="circle-content text-center">
-                        <h3 class="circle-title">Presentation</h3>
-                        <div class="overlay">
-                            <p>Presenting the final design solution, showcasing its features, and ensuring it aligns with the project goals.</p>
+                         960px" alt="">
+                            <sup class="position-absolute top-0 end-0 translate-middle bg-danger text-dark rounded px-1 me-2 mt-2">4</sup>
+                            <div class="circle-content text-center">
+                                <h3 class="circle-title">Presentation</h3>
+                                <div class="overlay">
+                                    <p>Presenting the final design solution, showcasing its features, and ensuring it aligns
+                                        with the project goals.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-      </section>
-    </div>
-    
-    
-      </main>
-    
-      <footer class="container-fluid bg-dark text-white py-5" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
-        <div class="container">
-            <div class="row mb-4">
-                <!-- Let's Talk Section -->
-                <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center" itemscope itemtype="http://schema.org/ContactPoint">
-                    <h5>Let's Talk</h5>
-                    <p class="mt-2" itemprop="email">devmehra422@gmail.com</p>
-                </div>
-    
-                <!-- Page Links Section -->
-                <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center" itemscope itemtype="http://schema.org/SiteNavigationElement">
-                    <div class="row">
-                        <div class="col-6 mb-3">
-                            <a href="index.html" class="text-white d-block" itemprop="url">Home</a>
+            </section>
+        </section>
+
+        <footer class="container-fluid bg-dark text-white py-5"
+            itemscope itemtype="http://schema.org/WPFooter">
+            <div class="container">
+                <div class="row mb-4">
+                    <!-- Let's Talk Section -->
+                    <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center"
+                        itemscope itemtype="http://schema.org/ContactPoint">
+                        <h5>Let's Talk</h5>
+                        <p class="mt-2" itemprop="email">devmehra422@gmail.com</p>
+                    </div>
+
+                    <!-- Page Links Section -->
+                    <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center"
+                        itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <div class="row">
+                            <div class="col-6 mb-3">
+                                <a href="index.html" class="text-white d-block" itemprop="url">Home</a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="about.html" class="text-white d-block" itemprop="url">About</a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="services.html" class="text-white d-block" itemprop="url">Services</a>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <a href="resume.html" class="text-white d-block" itemprop="url">Resume</a>
+                            </div>
                         </div>
-                        <div class="col-6 mb-3">
-                            <a href="about.html" class="text-white d-block" itemprop="url">About</a>
-                        </div>
-                        <div class="col-6 mb-3">
-                            <a href="services.html" class="text-white d-block" itemprop="url">Services</a>
-                        </div>
-                        <div class="col-6 mb-3">
-                            <a href="resume.html" class="text-white d-block" itemprop="url">Resume</a>
+                    </div>
+
+                    <!-- Social Links Section -->
+                    <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center"
+                        itemscope itemtype="http://schema.org/Person">
+                        <h5>Follow Me</h5>
+                        <div class="mt-2">
+                            <a href="#" class="text-white me-3" itemprop="sameAs"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white me-3" itemprop="sameAs"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-white me-3" itemprop="sameAs"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-white" itemprop="sameAs"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Social Links Section -->
-                <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center" itemscope itemtype="http://schema.org/Organization">
-                    <div class="row">
-                        <div class="col-6 mb-3 text-end">
-                            <a href="https://www.instagram.com" target="_blank" itemprop="sameAs"><img class="footer-logo" src="/images/instagram.png" alt="Instagram Logo"></a>
-                        </div>
-                        <div class="col-6 mb-3 text-start">
-                            <a href="https://www.linkedin.com" target="_blank" itemprop="sameAs"><img class="footer-logo" src="/images/linkedin.png" alt="LinkedIn Logo"></a>
-                        </div>
-                        <div class="col-6 mb-3 text-end">
-                            <a href="https://github.com" target="_blank" itemprop="sameAs"><img class="footer-logo" src="/images/github.png" alt="GitHub Logo"></a>
-                        </div>
-                        <div class="col-6 mb-3 text-start">
-                            <a href="https://www.youtube.com" target="_blank" itemprop="sameAs"><img class="footer-logo" src="/images/youtube.png" alt="YouTube Logo"></a>
-                        </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>&copy; 2023 Dev Aesthetics. All rights reserved.</p>
                     </div>
                 </div>
             </div>
-    
-            <!-- Copyright Section -->
-            <div class="row text-center">
-                <div class="col-12">
-                    <p class="mt-4" itemprop="copyrightHolder">&copy; 2023 Devjeet Singh. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        </footer>
+
+        <!-- Bootstrap JS, Popper.js, and jQuery -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-1CmrxMRARb6CQdMg4I5gCz7K7y+rtkGjF3/h7L3taDh3MBZjafZL7eJJLgGtQ0M"
+            crossorigin="anonymous"></script>
+    </main>
 </body>
+
 </html>
