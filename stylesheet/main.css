@@ -132,6 +132,43 @@ table {
 
 
 /* Starting */
+/* SKIP LINK */
+
+.skip-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: ghostwhite;
+  border-radius: 50%; /* This makes it circular */
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth transition */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.skip-link .arrow {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid indianred;
+  border-bottom: 2px solid indianred;
+  transform: rotate(45deg);
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect */
+.skip-link:hover {
+  background-color: indianred;
+}
+
+.skip-link:hover .arrow {
+  border-right-color: ghostwhite;
+  border-bottom-color: ghostwhite;
+}
 
 /* Navigation */
 .active{
@@ -147,6 +184,7 @@ p{
 }
 body{
   background-color: #071013;
+  overflow-x:hidden ;
 }
 
 .bg-rich-black {
