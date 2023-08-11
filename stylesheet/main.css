@@ -174,13 +174,14 @@ table {
 
 
 /* SKIP LINK BOTTOM(POINTING UPWARDS)
- */.skip-link-bottom {
+ */
+ .skip-link-bottom {
   display: inline-block;
   width: 40px;
   height: 40px;
   background-color: ghostwhite;
   border-radius: 50%; /* This makes it circular */
-  position: absolute;
+  position: fixed; /* Change this from absolute to fixed */
   bottom: 10px; /* Position it 10px from the bottom */
   left: 10px;
   text-align: center;
