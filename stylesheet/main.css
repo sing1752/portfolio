@@ -222,7 +222,7 @@ h1{
 }
 
 .intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Black Technology LinkedIn Banner.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bg-banner.png');
   background-size: cover;
   background-position: center;
 }
