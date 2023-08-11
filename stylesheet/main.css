@@ -414,6 +414,24 @@ h1{
   padding-top: 0;
 }
 
+
+/* ANIMATE LIBRARY CONFIGURATION */
+
+.animate-brief{
+  --animate-duration: 1s;
+}
+
+.animate-analytics{
+  --animate-duration: 1.4s;
+}
+
+.animate-proto{
+  --animate-duration: 1.8s;
+}
+
+.animate-present{
+  --animate-duration: 2s;
+}
 /* FOOTER */
 .footer-logo {
   height: 50px; 

@@ -19,6 +19,7 @@ Animate on scroll
 Bootstrap JS
 Popper.js
 jQuery
+Animate CSS Library
 
 External Pictures used:
 Services.png from Canava
