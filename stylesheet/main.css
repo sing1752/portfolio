@@ -236,7 +236,7 @@ body{
 }
 
 .navbar {
-  position: relative; /* or absolute or fixed, depending on your layout */
+  position: relative; 
   z-index: 1000; /* this ensures the navbar is above other elements */
 }
 
@@ -283,7 +283,7 @@ h1{
 /* Added a black overlay so that user can easily read the text */
 .carousel-caption .overlay {
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  padding: 20px; /* Add some padding so the text and button aren't right up against the edge of the overlay */
+  padding: 20px; /* Added some padding so the text and button aren't right up against the edge of the overlay */
 }
 
 
@@ -315,7 +315,7 @@ h1{
 }
 
 .circle-title {
-  z-index: 1; /* Place the title above the overlay and adjust its order */
+  z-index: 1; /* Places the title above the overlay and adjust its order */
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -351,7 +351,7 @@ h1{
   font-size: 14px;
   text-align: center;
   margin: 0;
-  padding: 10px; /* Add some padding for better readability */
+  padding: 10px; /* Added some padding for better readability */
 }
 
 /* PROJECTS FOR LARGE SCREENS */
@@ -364,7 +364,7 @@ h1{
   transition: opacity .2s; /* Smooths transition */
 }
 .hoverable:hover .card-title {
-  opacity: 1; /* Show the title on hover */
+  opacity: 1; /* Shows the title on hover */
 }
 
 .card-img-overlay {
@@ -374,7 +374,7 @@ h1{
 
 .hoverable:hover .card-img-top {
   transform: scale(1.05); /* Zoom in the image */
-  transition: transform .2s; /* Smooth transition */
+  transition: transform .2s; /* Smooths transition */
 }
 
 .hoverable:hover .card-img-overlay {
@@ -391,10 +391,10 @@ h1{
 }
 
 .card-img-top {
-  object-fit: cover; /* Cover the entire card area */
-  object-position: center; /* Center the image */
-  height: 100%; /* Set height to 100% of the card */
-  width: 100%; /* Set width to 100% of the card */
+  object-fit: cover; /* Covers the entire card area */
+  object-position: center; /* Centers the image */
+  height: 100%; /* Sets height to 100% of the card */
+  width: 100%; /* Sets width to 100% of the card */
 }
 
 
