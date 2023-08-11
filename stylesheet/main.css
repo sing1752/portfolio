@@ -132,8 +132,10 @@ table {
 
 
 /* Starting */
+
 /* SKIP LINK */
 
+/*  So i created a skip link keeping the portfolio theme in mind and made circular skip link with indian red and ghost white color and as soon as you hover over them they inverse in colors */
 .skip-link {
   display: inline-block;
   width: 40px;
@@ -160,7 +162,7 @@ table {
   transition: border-color 0.3s; /* Smooth transition */
 }
 
-/* Hover effect */
+/* Hover effect  for inversion fo colors*/
 .skip-link:hover {
   background-color: indianred;
 }
@@ -170,7 +172,48 @@ table {
   border-bottom-color: ghostwhite;
 }
 
+
+/* SKIP LINK BOTTOM(POINTING UPWARDS)
+ */.skip-link-bottom {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: ghostwhite;
+  border-radius: 50%; /* This makes it circular */
+  position: absolute;
+  bottom: 10px; /* Position it 10px from the bottom */
+  left: 10px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth transition */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.skip-link-bottom .arrow-bottom {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid indianred;
+  border-top: 2px solid indianred; 
+  transform: rotate(315deg);
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for inversion of colors */
+.skip-link-bottom:hover {
+  background-color: indianred;
+}
+
+.skip-link-bottom:hover .arrow-bottom {
+  border-right-color: ghostwhite;
+  border-top-color: ghostwhite; 
+}
+
+
 /* Navigation */
+
+/* This active is used for the active bar displayed under each link in the navigation bar showing that the page you are on is active */
 .active{
   border-bottom: 2px solid indianred;
 }
@@ -213,6 +256,7 @@ p{
   margin-bottom: 20px;
 }
 
+/*  Used !important to override the bootstrap color theme */
 h1{
   color: #CD5C5C !important;
 }
@@ -221,6 +265,7 @@ h1{
   color: indianred;
 }
 
+/*  here i linked a image with the url tag for the background image on home, i tried to make it work through the html code but did't worked so searched for another method and came up with this */
 .intro {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/bg-banner.png');
   background-size: cover;
@@ -229,11 +274,12 @@ h1{
 
 
 /* HOME */
-
+ 
 .img-fluid{
   margin-top: 70px;
   object-fit: contain;
 }
+/* Added a black overlay so that user can easily read the text */
 .carousel-caption .overlay {
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   padding: 20px; /* Add some padding so the text and button aren't right up against the edge of the overlay */
@@ -242,6 +288,8 @@ h1{
 
 
 /* Circle Styling */
+
+/*  Adds the my approach circle styling and also adds a overlay when hovering so that text can be read easily */
 .circle {
   position: relative;
   overflow: hidden;
@@ -266,7 +314,7 @@ h1{
 }
 
 .circle-title {
-  z-index: 1; /* Place the title above the overlay */
+  z-index: 1; /* Place the title above the overlay and adjust its order */
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -277,10 +325,10 @@ h1{
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%; /* Adjust based on your preference */
-  height: 80%; /* Adjust based on your preference */
+  width: 80%; 
+  height: 80%; 
   background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-  border-radius: 50%; /* Make it circular */
+  border-radius: 50%; 
   transform: translate(-50%, -50%); /* Center the overlay */
   display: flex;
   justify-content: center;
@@ -290,11 +338,11 @@ h1{
 }
 
 .circle:hover .circle-title {
-  opacity: 0; /* Hide the title on hover */
+  opacity: 0; /* Hides the title on hover as it decreases the opacity to 0 which is transparent */
 }
 
 .circle:hover .overlay {
-  opacity: 1; /* Show the overlay content on hover */
+  opacity: 1; /* Shows the title on hover as it increases the opacity to 1 which is fully visible */
 }
 
 .overlay p {
@@ -307,12 +355,12 @@ h1{
 
 /* PROJECTS FOR LARGE SCREENS */
 .card {
-  overflow: hidden; /* Hide overflow content */
+  overflow: hidden; /* Hide overflow content so that it stays inside the card , i used this for my movie poster image as it was too big and was disrupting the overall layout of the large screen projects section */
 }
 
 .card-title {
   opacity: 0; /* Hide the title by default */
-  transition: opacity .2s; /* Smooth transition */
+  transition: opacity .2s; /* Smooths transition */
 }
 .hoverable:hover .card-title {
   opacity: 1; /* Show the title on hover */
@@ -368,9 +416,10 @@ h1{
 
 /* FOOTER */
 .footer-logo {
-  height: 50px; /* Adjust as needed */
+  height: 50px; 
 }
 
+/* For footer hyperlinks */
 footer a.text-white:hover {
   color: indianred !important;
 }

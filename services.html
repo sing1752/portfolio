@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+<!-- Links google fonts directly from here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito&display=swap" rel="stylesheet">
-
+  <!-- Used animate on scroll library to add some animation while scrolling and make the overall user experience better -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
 
     <link rel="stylesheet" href="stylesheet/main.css">
 </head>
-<body>
+<!--  Added schema from schema.org for accessibility purpose and SEO -->
+<body itemscope itemtype="http://schema.org/WebPage">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img class="nav-logo" src="images/main-logo.png" alt="brand logo"></a>
@@ -33,7 +34,8 @@
                 <li class="nav-item mx-3">
                     <a class="nav-link text-decoration-none active" href="services.html">Services</a>
                 </li> 
-                <li class="nav-item mx-3 position-relative"> <!-- position-relative for the active indicator -->
+                <!-- position-relative for the active indicator to display which page is active -->
+                <li class="nav-item mx-3 position-relative"> 
                     <a class="nav-link text-decoration-none " href="contact.html">Contact</a>
                 </li> 
             </ul>
@@ -47,7 +49,12 @@
 
 
       <main>
-        <div class="container-fluid services-wrapper p-auto" itemscope itemtype="http://schema.org/Service">
+         <!-- Added a skip link on the left side with inversion of colors related to my portfolio theme -->
+         <a href="#main-content" class="skip-link">
+            <i class="arrow"></i>
+        </a>
+        <!-- Added wrapper to for the intro section  and services section so that if i need to i can just adjust margin or padding directly from here -->
+        <div class="container-fluid services-wrapper p-auto" itemscope itemtype="http://schema.org/Service" id="intro">
           <div class="row justify-content-center services-intro">
       
               <!-- Intro Section -->
@@ -66,13 +73,14 @@
               </div>
       
               <!-- Services Section -->
-              <div class="col-12 col-md-6 col-lg-8 mt-4" ata-aos="fade-up">
+              <div class="col-12 col-md-6 col-lg-8 mt-4" ata-aos="fade-up" id="main-content">
                   <div class="row justify-content-center services">
       
                       <!-- First Service: Web Development -->
                       <div class="col-12 col-md-6 mb-4" itemscope itemtype="http://schema.org/Service" ata-aos="fade-up">
                           <div class="row align-items-center">
                               <div class="col-12 col-lg-6 text-center">
+                                <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                                   <img src="images/web-development.png" 
                                        srcset="images/web-development.png 500w, 
                                                images/web_development_md.png 720w, 
@@ -92,6 +100,7 @@
                       <div class="col-12 col-md-6 mb-4" itemscope itemtype="http://schema.org/Service" ata-aos="fade-up">
                           <div class="row align-items-center">
                               <div class="col-12 col-lg-6 text-center">
+                                <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                                   <img src="images/user_interface.png" 
                                        srcset="images/user_interface.png 500w, 
                                                images/user_interface_md.png 720w, 
@@ -111,6 +120,7 @@
                       <div class="col-12 col-md-6 mb-4" itemscope itemtype="http://schema.org/Service" ata-aos="fade-up">
                           <div class="row align-items-center">
                               <div class="col-12 col-lg-6 text-center">
+                                <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                                   <img src="images/user_research.png" 
                                        srcset="images/user_research.png 500w, 
                                                images/user_research_md.png 720w, 
@@ -126,10 +136,12 @@
                           </div>
                       </div>
       
-                      <!-- Fourth Service: Videography -->
+                      <!-- Fourth Service: Videography --> 
+                      
                       <div class="col-12 col-md-6 mb-4" itemscope itemtype="http://schema.org/Service" ata-aos="fade-up">
                           <div class="row align-items-center">
                               <div class="col-12 col-lg-6 text-center">
+                                <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                                   <img src="images/videography.png" 
                                        srcset="images/videography.png 500w, 
                                                images/videography_md.png 720w, 
@@ -140,6 +152,7 @@
                                        alt="Videography Icon" class="img-fluid mb-3" itemprop="image">
                               </div>
                               <div class="col-12 col-lg-6">
+                                <!-- Used itemprop as description as some information is being conveyed -->
                                   <p itemprop="description">Creating moody, dark, aesthetic, and cinematic short movies and projects. I specialize in capturing compelling visuals and narratives that evoke emotion and tell impactful stories. Whether it's promotional videos, short films, or creative visual content, I bring a unique and artistic approach to each project.</p>
                               </div>
                           </div>
@@ -149,14 +162,15 @@
           </div>
       </div>
       
-
-        
+     
       
+        
       </main>
       
 
-
+     
       <footer class="container-fluid bg-dark text-white py-5" itemscope itemtype="http://schema.org/WPFooter">
+        
         <div class="container">
             <div class="row mb-4">
                 <!-- Let's Talk Section -->
@@ -201,6 +215,9 @@
                     </div>
                 </div>
             </div>
+            <a href="#main-content" class="skip-link-bottom">
+                <i class="arrow-bottom"></i>
+            </a>
     
             <!-- Copyright Section -->
             <div class="row text-center">
@@ -212,10 +229,10 @@
     </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-      <!-- Load AOS library -->
+      <!-- To load the AOS library script-->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-<!-- Initialize AOS -->
+<!-- To Initialize AOS library,without this none of the classes would work-->
 <script>
   AOS.init();
 </script>

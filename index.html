@@ -7,50 +7,44 @@
     <title>Dev Aesthetics</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+    <!-- Links google fonts directly from here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito&display=swap" rel="stylesheet">
 
+    <!-- Used animate on scroll library to add some animation while scrolling and make the overall user experience better -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
 
     <link rel="stylesheet" href="stylesheet/main.css">
 </head>
 
+<!--  Added schema from schema.org for accessibility purpose and SEO -->
 <body itemscope itemtype="http://schema.org/WebPage">
 
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" itemprop="url"><img class="nav-logo" src="images/main-logo.png"
-                    alt="Main Logo" itemprop="logo"></a>
-
+            <a class="navbar-brand" href="#"><img class="nav-logo" src="images/main-logo.png" alt="brand logo"></a>
+            
             <!-- Navbar toggler button for smaller screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            
             <div class="collapse navbar-collapse" id="navbarNav">
-
                 <!-- Navbar links for all screens -->
-                <ul class="navbar-nav ms-auto fs-5" role="menu" itemscope
-                    itemtype="http://schema.org/SiteNavigationElement">
-                    <li class="nav-item mx-3" role="presentation">
-                        <!-- mx-3 for horizontal margin -->
-                        <a class="nav-link text-decoration-none active" aria-current="page" href="index.html"
-                            itemprop="url" role="menuitem"><span itemprop="name">Home</span></a>
+                <ul class="navbar-nav ms-auto fs-5"> <!-- fs-5 for font size -->
+                    <li class="nav-item mx-3"> <!-- mx-3 for horizontal margin -->
+                        <a class="nav-link text-decoration-none active" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item mx-3" role="presentation">
-                        <a class="nav-link text-decoration-none" href="services.html" itemprop="url" role="menuitem"><span
-                                itemprop="name">Services</span></a>
-                    </li>
-                    <li class="nav-item mx-3 position-relative" role="presentation">
-                        <!-- position-relative for the active indicator -->
-                        <a class="nav-link text-decoration-none" href="contact.html" itemprop="url" role="menuitem"><span
-                                itemprop="name">Contact</span></a>
-                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-decoration-none" href="services.html">Services</a>
+                    </li> 
+                    <li class="nav-item mx-3 position-relative"> <!-- position-relative for the active indicator -->
+                        <a class="nav-link text-decoration-none " href="contact.html">Contact</a>
+                  
+                    </li> 
                 </ul>
             </div>
         </div>
@@ -58,16 +52,19 @@
     
     <main itemprop="mainContentOfPage" data-aos="fade-up">
       
+        <!-- Added a main wrapper which acts like a belt as it helps to tighten up everything together efficiently -->
         <div class="main-wrapper">
           
+            <!-- Added a skip link on the left side with inversion of colors related to my portfolio theme -->
           <a href="#main-content" class="skip-link">
             <i class="arrow"></i>
         </a>
-        
+        <!-- Added scroll on navigation zoom-in in the intro section,although the intro section is on top and this animation is only visible while scrolling,However,it still can be seen when entering the site and adds little smooth zoom in animation to the intro section -->
             <section class="intro text-center bg-dark" itemscope itemtype="http://schema.org/AboutPage" data-aos="zoom-in">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-6">
+                            <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                             <img src="images/hero_image.jpeg"
                                 srcset="images/hero_image_sm.jpeg 500w, 
                               images/hero_image_md.jpeg 720w, 
@@ -89,18 +86,21 @@
 
             <section class="projects text-start" id="main-content" itemscope itemtype="http://schema.org/ItemList" data-aos="fade-up">
                 <h2 class="section-title pt-3 pb-3 h2" itemprop="name">Projects</h2>
-                <!-- FOR SMALL SCREEN PROJECTS -->
+                <!-- Made a different section for small to medium screen projects as my large screen layout is completely different, i tried to condense them in to one section but it was causing some bugs in the rest of the code-->
                 <div class="d-lg-none">
-                    <div id="carouselExampleCaptions" class="carousel slide" role="list" >
+
+                    <!--  Used carousel bootstrap in-built utility and made some small tweaks to it -->
+                    <div id="carouselCaptions" class="carousel slide" role="list" >
                         <div class="carousel-indicators" role="tablist">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner" role="listbox">
+                            <!-- Active class shows if the current image or element is active and it switches automatically according to the image which is being displayed -->
                             <div class="carousel-item active" itemprop="itemListElement"
                                 itemscope itemtype="http://schema.org/ListItem">
                                 <img src="images/photography_portfolio.png" class="d-block w-100"
@@ -139,25 +139,26 @@
                                 </div>
                             </div>
 
-                            <!-- Carousel Item: Finiest Bakery -->
+                            <!-- Carousel Item: Finest Bakery -->
                             <div class="carousel-item" itemprop="itemListElement"
                                 itemscope itemtype="http://schema.org/ListItem">
-                                <img src="images/finiest_bakery.png" class="d-block w-100" alt="Finiest Bakery Image"
+                                <img src="images/finest_bakery.png" class="d-block w-100" alt="Finest Bakery Image"
                                     itemprop="image">
                                 <div class="carousel-caption d-md-none">
                                     <div class="overlay">
-                                        <h3 itemprop="name">Finiest Bakery</h3>
+                                        <h3 itemprop="name">Finest Bakery</h3>
                                         <p><button type="button" class="btn btn-danger">Visit</button></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        <!-- Buttons for carousel control built with bootstrap Utilities , used it for easier navigation while scrolling through carousel-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions"
                             data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions"
                             data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
@@ -166,6 +167,8 @@
                 </div>
             </section>
                 <!-- FOR LARGE SCREEN PROJECTS -->
+
+                <!--  Made this separately for large screens as the projects section layout for large screen was completely different-->
 
                 <div class="d-none d-lg-block">
                     <div class="row">
@@ -179,19 +182,21 @@
                                     <h5 class="card-title text-center" itemprop="name">Photography Portfolio</h5>
                                 </div>
                             </div>
+                            <!-- Decided on using the default danger color as it matches my portfolio theme -->
                             <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
                         </div>
 
-                        <!-- Project 2: Finiest Bakery -->
+                        <!-- Project 2: Finest Bakery -->
                         <div class="col-md-4 col-sm-6 col-12 mb-4 text-center" itemscope
                             itemtype="http://schema.org/ListItem" data-aos="flip-right">
-                            <div class="card hoverable" role="group" aria-label="Finiest Bakery Project">
-                                <img src="images/finiest_bakery.png" class="card-img-top" alt="Finiest Bakery Image"
+                            <div class="card hoverable" role="group" aria-label="Finest Bakery Project">
+                                <img src="images/finest_bakery.png" class="card-img-top" alt="Finiest Bakery Image"
                                     itemprop="image">
                                 <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                    <h5 class="card-title text-center" itemprop="name">Finiest Bakery</h5>
+                                    <h5 class="card-title text-center" itemprop="name">Finest Bakery</h5>
                                 </div>
                             </div>
+                            <!-- Decided on using the default danger color as it matches my portfolio theme -->
                             <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
                         </div>
 
@@ -205,6 +210,7 @@
                                     <h5 class="card-title text-center" itemprop="name">Interview Project</h5>
                                 </div>
                             </div>
+                             <!-- Decided on using the default danger color as it matches my portfolio theme -->
                             <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
                         </div>
 
@@ -218,6 +224,7 @@
                                     <h5 class="card-title text-center" itemprop="name">Mood Board</h5>
                                 </div>
                             </div>
+                            <!-- Decided on using the default danger color as it matches my portfolio theme -->
                             <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
                         </div>
 
@@ -231,6 +238,7 @@
                                     <h5 class="card-title text-center" itemprop="name">Breaking The Loop</h5>
                                 </div>
                             </div>
+                            <!-- Decided on using the default danger color as it matches my portfolio theme -->
                             <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
                         </div>
 
@@ -245,13 +253,17 @@
                                     <h5 class="card-title text-center" itemprop="name">Horror Poster</h5>
                                 </div>
                             </div>
+                            <!-- Decided on using the default danger color as it matches my portfolio theme -->
                             <button type="button" class="btn btn-outline-danger mt-3">Visit</button>
                         </div>
                     </div>
                 </div>
             
       
-            
+            <!-- Used how to schema as i am describing my approach towards the projects  -->
+            <a href="#main-content" class="skip-link-bottom">
+                <i class="arrow-bottom"></i>
+            </a>
         <section class="approach" itemscope itemtype="http://schema.org/HowToSection " data-aos="fade-up">
             <section class="container-fluid">
                 <h2 class="section-title pt-3 pb-3 h2" itemprop="name">My Approach</h2>
@@ -259,6 +271,7 @@
                     <!-- Brief Section -->
                     <div class="col-md-6 col-lg-3" data-aos="zoom-in">
                         <div class="circle mb-3 position-relative">
+                             <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                             <img class="circle-img" src="images/approach.png"
                                 srcset="images/approach_sm.png 500w, 
                                images/approach_md.png 720w, 
@@ -280,6 +293,7 @@
                     <!-- Analytics Section -->
                     <div class="col-md-6 col-lg-3" data-aos="zoom-in">
                         <div class="circle mb-3 position-relative">
+                             <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                             <img class="circle-img" src="images/approach.png"
                                 srcset="images/approach_sm.png 500w, 
                           images/approach_md.png 720w, 
@@ -301,6 +315,7 @@
                     <!-- Prototyping Section -->
                     <div class="col-md-6 col-lg-3" data-aos="zoom-in">
                         <div class="circle mb-3 position-relative">
+                             <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                             <img class="circle-img" src="images/approach.png"
                                 srcset="images/approach_sm.png 500w, 
                           images/approach_md.png 720w, 
@@ -322,6 +337,7 @@
                     <!-- Presentation Section -->
                     <div class="col-md-6 col-lg-3" data-aos="zoom-in">
                         <div class="circle mb-3 position-relative">
+                             <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                             <img class="circle-img" src="images/approach.png"
                                 srcset="images/approach_sm.png 500w, 
                           images/approach_md.png 720w, 
@@ -403,14 +419,12 @@
           
     </main>
      <!-- Bootstrap JS, Popper.js, and jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-1CmrxMRARb6CQdMg4I5gCz7K7y+rtkGjF3/h7L3taDh3MBZjafZL7eJJLgGtQ0M"
-crossorigin="anonymous"> </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-<!-- Load AOS library -->
+<!-- To load the AOS library script-->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-<!-- Initialize AOS -->
+<!-- To Initialize AOS library,without this none of the classes would work-->
 <script>
   AOS.init();
 </script>

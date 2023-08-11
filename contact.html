@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+    <!-- !-- Links google fonts directly from here -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Nunito&display=swap" rel="stylesheet">
-
+<!-- Used animate on scroll library to add some animation while scrolling and make the overall user experience better -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
 
     <link rel="stylesheet" href="stylesheet/main.css">
 </head>
-<body>
+<!--  Added schema from schema.org for accessibility purpose and SEO -->
+<body itemscope itemtype="http://schema.org/WebPage">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img class="nav-logo" src="images/main-logo.png" alt="brand logo"></a>
@@ -44,9 +45,13 @@
 
 
       <main>
+         <!-- Added a skip link on the left side with inversion of colors related to my portfolio theme -->
+         <a href="#main-content" class="skip-link">
+            <i class="arrow"></i>
+        </a>
+        <!-- FOR SMALLER SCREENS -->
       
-      
-      <div class="container-fluid contact-wrapper d-flex flex-column">
+      <div class="container-fluid contact-wrapper d-flex flex-column" id="intro">
         <div class="row justify-content-center contact-intro text-center d-lg-none">
             <!-- Image on the top for smallest screens and on the left for screens 768px or above -->
             <div class="col-12 col-md-6 order-1 order-md-1">
@@ -65,7 +70,7 @@
             </div>
         </div>
         
-        <div class="container mt-5 d-lg-none">
+        <div class="container mt-5 d-lg-none" id="main-content">
             <form>
                 <div class="mb-3">
                     <label for="name" class="form-label">Your Name</label>
@@ -96,6 +101,7 @@
     
     <!-- FORM FOR LARGER SCREENS -->
    
+    <!-- Made the layout for large screen separately as it was different from smaller and medium screen  -->
     <div class="d-flex flex-column min-vh-100">
       <div class="flex-grow-1 d-flex align-items-center justify-content-center"> <!-- Added flex utilities here -->
           <!-- Your contact section -->
@@ -103,6 +109,7 @@
               <div class="row w-100">
                   <!-- Left side: Image, h1, paragraph, and buttons -->
                   <div class="col-lg-6 text-center">
+                     <!-- Used resolution switching so that the image is always better quality for all screen sizes,resized all the images before using by utilizing the resolution chart in brightspace which is under WEEK 4 -->
                       <img 
                           srcset="images/about_banner_sm.png 540w,
                                   images/about_banner_md.png 720w,
@@ -155,6 +162,7 @@
 </div>
 </div>
   
+
 </main>
 
 
@@ -187,6 +195,7 @@
                 </div>
     
                 <!-- Social Links Section -->
+                <!-- Used schema organization as it links to a social media organization -->
                 <div class="col-sm-12 col-md-4 mb-3 mb-sm-0 text-sm-center" itemscope itemtype="http://schema.org/Organization">
                     <div class="row">
                         <div class="col-6 mb-3 text-end">
@@ -213,15 +222,19 @@
             </div>
         </div>
     </footer>
+   
+       <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <!-- Load AOS library -->
+    <!-- To load the AOS library script-->
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-<!-- Initialize AOS -->
+<!-- To Initialize AOS library,without this none of the classes would work-->
 <script>
   AOS.init();
 </script>
-
+<a href="#intro" class="skip-link-bottom">
+    <i class="arrow-bottom"></i>
+</a>
 </body>
 </html>

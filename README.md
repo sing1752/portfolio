@@ -15,3 +15,18 @@ Performance Optimization: As I added more content and media, the site's load tim
 Browser Compatibility: Making sure the portfolio worked seamlessly across different browsers was another hurdle. I used tools like Can I use and BrowserStack to test and fix compatibility issues.
 
 Through these challenges, I learned the importance of thorough testing, continuous learning, and seeking feedback. This project taught me not just about coding but also about the nuances of web design and user experience.
+
+Libraries/Frameworks used:
+Bootstrap
+Animate on scroll
+Bootstrap JS
+Popper.js
+jQuery
+
+External Pictures used:
+Services.png from Canava
+Social Media icons from Canava
+Services Icons from Canava
+
+External Fonts:
+Used EXO2 and Nunito from google fonts
